@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sonto Hygiene Supplies</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #0a9396;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 80px;
+}
+
+nav {
+    background: #005f73;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+section {
+    padding: 40px;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.hero {
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') no-repeat center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    background: #001219;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+<script>
+function showPage(pageId) {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(section => section.classList.remove("active"));
+    document.getElementById(pageId).classList.add("active");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <img src="Picture 100.PNG"alt="logo"width="400" height="auto">
+    <h1>Sonto Hygiene Supplies</h1>
+    <p><b>Clean You can Trust, Hygiene You Deserve</b></p>
+</header>
+
+<nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('products')">Products</a>
+    <a href="#" onclick="showPage('about')">About Us</a>
+    <a href="#" onclick="showPage('contact')">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active">
+    <div class="hero">
+        <h1>Clean. Fresh. Reliable.</h1>
+        <p>Your trusted supplier of quality hygiene products</p>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+
+        <div class="product">
+            <img src="Picture 2.JPG">
+            <h3>Pine Gel</h3>
+	<h3><b>R250</b></h3>
+            <p>Powerful floor cleaner</p>
+        </div>
+
+        <div class="product">
+            <img src="Picture 3.JPG">
+            <h3>Thick Bleach</h3>
+	<h3><b>R150</b></h3>
+            <p>Strong stain remover</p>
+        </div>
+
+        <div class="product">
+            <img src="Picture 4.JPG">
+            <h3>Dishwashing Liquid</h3>
+	<h3><b>R150</b></h3>
+            <p>Grease cutting formula</p>
+        </div>
+
+        <div class="product">
+            <img src="Picture 6.PNG">
+            <h3>Title Cleaner</h3>
+	<h3><b>R150</b></h3>
+            <p>Gentle and effective</p>
+        </div>
+
+        <div class="product">
+            <img src="Picture 5.JPG">
+            <h3>Shower Gel</h3>
+	<h3><b>R45</b></h3>
+            <p>Refreshing fragrance</p>
+        </div>
+
+        <div class="product">
+            <img src="Picture 7.PNG">
+            <h3>Foam Baths</h3>
+	<h3><b>R150</b></h3>
+            <p>Relaxing bubbles</p>
+        </div>
+
+       
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Sonto Hygiene Supplies is dedicated to providing high-quality cleaning and bathing products 
+        that keep homes, businesses, and environments fresh and hygienic.
+    </p>
+    <p>
+        We believe that cleanliness is not just a habit, but a lifestyle. Our products are 
+        carefully selected to give you the best results at affordable prices.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>&#128241;Phone:</strong> 071 637 5757 / 072 120 9986</p>
+<h2>Location</h2>
+<p><strong>&#128205;Witbank Kwa Guqa</strong></p>
+
+    
+<h3>Terms & Conditions</h3>
+    <p>
+        Delivery fees are not fixed and will be discussed depending on your location and order size. 
+        We ensure fair pricing and reliable service for every customer.
+    </p>
+	<p>Accepted payment: Cash & Transfer</p>
+</section>
+
+<footer>
+    <p>© 2026 Sonto Hygiene Supplies | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
